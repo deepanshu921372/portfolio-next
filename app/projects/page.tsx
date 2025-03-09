@@ -16,7 +16,7 @@ export default function ProjectsPage() {
             key={index}
             title={project.title}
             description={project.description}
-            image={project.image as string}
+            image={project.image as unknown as string}
             technologies={project.technologies}
             githubLink={project.githubLink}
             liveLink={project.liveLink}

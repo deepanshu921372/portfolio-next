@@ -127,7 +127,7 @@ export const skillsData = {
   backend: [
     { name: "Node.js", level: 90 },
     { name: "Express", level: 85 },
-    { name: "MongoDB", level: 80 },,
+    { name: "MongoDB", level: 80 },
   ],
   tools: [
     { name: "VS Code", level: 99 },
