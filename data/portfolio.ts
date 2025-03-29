@@ -39,6 +39,15 @@ export const educationData = [
 
 export const experienceData = [
   {
+    position: "React Developer Intern",
+    company: "Bolofy",
+    location: "Remote",
+    duration: "March 2024 - Present",
+    description:
+      "Worked on creating and fixing UI and user experience for an AI-powered chatbot.",
+    technologies: ["React", "Node.js", "Material-UI", "Tailwind CSS"],
+  },
+  {
     position: "Full-stack Developer Intern",
     company: "CODTECH IT SOLUTIONS",
     location: "Remote",
@@ -127,7 +136,7 @@ export const skillsData = {
   backend: [
     { name: "Node.js", level: 90 },
     { name: "Express", level: 85 },
-    { name: "MongoDB", level: 80 },
+    { name: "MongoDB", level: 80 },,
   ],
   tools: [
     { name: "VS Code", level: 99 },
