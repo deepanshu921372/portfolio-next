@@ -7,4 +7,9 @@ const nextConfig = {
   images: { unoptimized: true },
 };
 
+// Add proper signal handling
+process.on('SIGINT', () => {
+  process.exit(0)
+})
+
 module.exports = nextConfig;
