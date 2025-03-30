@@ -121,7 +121,7 @@ export function Sidebar() {
       <div className="hidden md:flex fixed left-0 top-0 h-full w-20 bg-card shadow-md flex-col items-center py-8 z-40">
         <div className="flex flex-col items-center justify-between h-full">
           <div className="flex flex-col items-center gap-8">
-            <div onClick={() => router.push("/")} className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-xl transition-transform duration-300 hover:scale-110">
+            <div onClick={() => router.push("/")} className="w-12 h-12 cursor-pointer rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-xl transition-transform duration-300 hover:scale-110">
               {personalData.name.charAt(0)}
             </div>
             <nav>
