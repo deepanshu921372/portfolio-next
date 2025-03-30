@@ -13,7 +13,8 @@ import {
   Code2, 
   Mail, 
   Menu, 
-  X 
+  X,
+  File
 } from "lucide-react";
 import { personalData } from "@/data/portfolio";
 import { useRouter } from "next/navigation";
@@ -25,6 +26,7 @@ const navItems = [
   { name: "Projects", path: "/projects", icon: FolderKanban },
   { name: "Skills", path: "/skills", icon: Code2 },
   { name: "Contact", path: "/contact", icon: Mail },
+  { name: "Resume", path: "https://drive.google.com/file/d/1u3mAM1AuLdkK4c_zjRIxaLk-8WQEuzwV/view?usp=sharing", icon: File },
 ];
 
 export function Sidebar() {
@@ -91,19 +93,35 @@ export function Sidebar() {
                     const Icon = item.icon;
                     return (
                       <li key={item.path}>
-                        <Link
-                          href={item.path}
-                          onClick={() => setIsMobileMenuOpen(false)}
-                          className={cn(
-                            "flex items-center gap-3 px-3 py-2 rounded-md transition-all duration-300",
-                            pathname === item.path
-                              ? "bg-primary text-primary-foreground"
-                              : "hover:bg-muted hover:translate-x-2"
-                          )}
-                        >
-                          <Icon className="h-5 w-5" />
-                          <span>{item.name}</span>
-                        </Link>
+                        {item.name === "Resume" ? (
+                          <a
+                            href={item.path}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className={cn(
+                              "flex items-center gap-3 px-3 py-2 rounded-md transition-all duration-300",
+                              "hover:bg-muted hover:translate-x-2"
+                            )}
+                          >
+                            <Icon className="h-5 w-5" />
+                            <span>{item.name}</span>
+                          </a>
+                        ) : (
+                          <Link
+                            href={item.path}
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className={cn(
+                              "flex items-center gap-3 px-3 py-2 rounded-md transition-all duration-300",
+                              pathname === item.path
+                                ? "bg-primary text-primary-foreground"
+                                : "hover:bg-muted hover:translate-x-2"
+                            )}
+                          >
+                            <Icon className="h-5 w-5" />
+                            <span>{item.name}</span>
+                          </Link>
+                        )}
                       </li>
                     );
                   })}
@@ -131,20 +149,37 @@ export function Sidebar() {
                   const isActive = pathname === item.path;
                   return (
                     <li key={item.path} className="group">
-                      <Link
-                        href={item.path}
-                        className={cn(
-                          "relative flex flex-col items-center justify-center w-12 h-12 rounded-full transition-all duration-300",
-                          isActive
-                            ? "bg-primary text-primary-foreground"
-                            : "hover:bg-muted hover:scale-110"
-                        )}
-                      >
-                        <Icon className="h-5 w-5" />
-                        <span className="absolute -right-20 bg-card px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md">
-                          {item.name}
-                        </span>
-                      </Link>
+                      {item.name === "Resume" ? (
+                        <a
+                          href={item.path}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={cn(
+                            "relative flex flex-col items-center justify-center w-12 h-12 rounded-full transition-all duration-300",
+                            "hover:bg-muted hover:scale-110"
+                          )}
+                        >
+                          <Icon className="h-5 w-5" />
+                          <span className="absolute -right-20 bg-card px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md">
+                            {item.name}
+                          </span>
+                        </a>
+                      ) : (
+                        <Link
+                          href={item.path}
+                          className={cn(
+                            "relative flex flex-col items-center justify-center w-12 h-12 rounded-full transition-all duration-300",
+                            isActive
+                              ? "bg-primary text-primary-foreground"
+                              : "hover:bg-muted hover:scale-110"
+                          )}
+                        >
+                          <Icon className="h-5 w-5" />
+                          <span className="absolute -right-20 bg-card px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md">
+                            {item.name}
+                          </span>
+                        </Link>
+                      )}
                     </li>
                   );
                 })}
