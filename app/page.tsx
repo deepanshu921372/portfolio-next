@@ -80,12 +80,12 @@ export default function Home() {
               <div className="text-muted-foreground">Years Experience</div>
             </div>
             <div className="bg-card rounded-lg p-6 shadow-md border border-border transform transition-all duration-500 hover:scale-105 hover:shadow-lg">
-              <div className="text-4xl font-bold text-primary mb-2">5+</div>
-              <div className="text-muted-foreground">Projects Completed</div>
+              <div className="text-4xl font-bold text-primary mb-2">6+</div>
+              <div className="text-muted-foreground">Months Internship</div>
             </div>
             <div className="bg-card rounded-lg p-6 shadow-md border border-border transform transition-all duration-500 hover:scale-105 hover:shadow-lg">
-              <div className="text-4xl font-bold text-primary mb-2">3+</div>
-              <div className="text-muted-foreground">Happy Clients</div>
+              <div className="text-4xl font-bold text-primary mb-2">10+</div>
+              <div className="text-muted-foreground">Projects Completed</div>
             </div>
           </div>
         </div>
