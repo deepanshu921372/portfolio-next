@@ -21,8 +21,8 @@ export function TimelineItem({
   return (
     <div className="relative flex items-center justify-center md:justify-between group">
 
-      <div className="absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-white border-4 border-primary items-center justify-center z-10 transition-all duration-300 group-hover:scale-110 hidden md:flex">
-        <Briefcase className="h-5 w-5 text-primary" />
+      <div className="absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-white dark:bg-gray-950 border-4 border-primary items-center justify-center z-10 transition-all duration-300 group-hover:scale-110 hidden md:flex">
+        <Briefcase className="h-5 w-5 text-black dark:text-primary" />
       </div>
       
 
@@ -35,7 +35,7 @@ export function TimelineItem({
 
         <div 
           className={cn(
-            "hidden md:block absolute top-1/2 w-14 h-0.5 bg-primary -translate-y-1/2",
+            "hidden md:block absolute top-1/2 w-14 h-0.5 bg-primary dark:bg-primary -translate-y-1/2",
             isLeft ? "right-0 translate-x-full" : "left-0 -translate-x-full"
           )}
         ></div>
@@ -67,7 +67,7 @@ export function Timeline({ children }: { children: React.ReactNode }) {
   return (
     <div className="relative">
 
-      <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-primary/30 -translate-x-1/2 md:translate-x-0"></div>
+      <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-primary dark:bg-primary -translate-x-1/2 md:translate-x-0"></div>
       <div className="space-y-16">{children}</div>
     </div>
   );
