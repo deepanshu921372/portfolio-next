@@ -43,13 +43,20 @@ export function ContactForm() {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
-
-    fetch("https://formsubmit.co/ajax/sharmadeepanshu1005@gmail.com", {
+    
+    const formData = new FormData();
+    Object.entries(values).forEach(([key, value]) => {
+      formData.append(key, value);
+    });
+    
+    formData.append("_subject", `New message from ${values.name}`);
+    formData.append("_captcha", "false");
+    formData.append("_template", "table");
+    formData.append("_next", window.location.href);
+    
+    fetch("https://formsubmit.co/sharmadeepanshu1005@gmail.com", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(values),
+      body: formData,
     })
       .then((response) => {
         if (response.ok) {
