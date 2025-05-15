@@ -4,6 +4,7 @@ import book from "../public/book.jpeg";
 import cloth from "../public/cloth.jpeg";
 import nova from "../public/nova.jpeg";
 import portfolio from "../public/portfolio.png"
+import budget from "../public/budget.png"
 
 export const personalData = {
   name: "Deepanshu Sharma",
@@ -76,6 +77,15 @@ export const projectsData = [
     technologies: ["React", "Material-UI", "Amazon Web Services (AWS)", "Postman API", "MongoDB"],
     githubLink: "https://github.com/deepanshu921372/999-manager-app-id-card",
     liveLink: "https://admin.999logistics.in",
+  },
+  {
+    title: "BudgetBuddy - Expense Tracker",
+    description:
+      "BudgetBuddy is a smart, voice-powered finance tracker that helps you manage income and expenses hands-free. Just say “Add transaction” and speak your details — no typing needed! It features real-time charts, voice navigation, secure login, and works seamlessly across devices",
+    image: budget,
+    technologies: ["React.js", "Zustand", "TailwindCSS", "Node.js", "Express", "Firebase Auth", "MongoDB", "Chart.js", "Speech Recognition API", "XLSX"],
+    githubLink: "https://github.com/deepanshu921372/BudgetBuddy",
+    liveLink: "https://budgettbuddy.netlify.app",
   },
   {
     title: "DeeCare - Full-Stack Hospital Management System ",

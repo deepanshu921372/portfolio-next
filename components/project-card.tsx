@@ -1,3 +1,5 @@
+'use client'
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink, Github } from "lucide-react";
@@ -41,7 +43,7 @@ export function ProjectCard({
       </div>
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2 transition-colors duration-300 group-hover:text-primary">{title}</h3>
-        <p className="text-muted-foreground mb-4 line-clamp-3">{description}</p>
+        <DescriptionWithReadMore description={description} storageKey={`project-desc-${title}`} />
         <div className="flex flex-wrap gap-2 mb-4">
           {technologies.map((tech) => (
             <span
@@ -67,6 +69,42 @@ export function ProjectCard({
           </Button>
         </div>
       </div>
+    </div>
+  );
+}
+
+function DescriptionWithReadMore({ description, storageKey }: { description: string; storageKey: string }) {
+  const maxLength = 100; 
+  const isLong = description.length > maxLength;
+  const [expanded, setExpanded] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const stored = localStorage.getItem(storageKey);
+      if (stored === "true") setExpanded(true);
+    }
+  }, [storageKey]);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem(storageKey, expanded ? "true" : "false");
+    }
+  }, [expanded, storageKey]);
+
+  return (
+    <div className="mb-4">
+      <p className="text-muted-foreground">
+        {expanded || !isLong ? description : description.slice(0, maxLength) + '...'}
+        {isLong && (
+          <button
+            className="ml-2 underline text-primary hover:text-primary/80 text-sm font-medium focus:outline-none"
+            onClick={() => setExpanded((prev) => !prev)}
+            type="button"
+          >
+            {expanded ? 'Read less' : 'Read more'}
+          </button>
+        )}
+      </p>
     </div>
   );
 }
