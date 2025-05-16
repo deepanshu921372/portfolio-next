@@ -26,7 +26,7 @@ const navItems = [
   { name: "Projects", path: "/projects", icon: FolderKanban },
   { name: "Skills", path: "/skills", icon: Code2 },
   { name: "Contact", path: "/contact", icon: Mail },
-  { name: "Resume", path: "https://drive.google.com/file/d/1TXsxuk-myyDz6MEec-g2mA3peAHYsqh6/view?usp=sharing", icon: File },
+  { name: "Resume", path: "https://drive.google.com/file/d/16rZws00JRvxqSZ4XDl5iFEHJyjLQRK-g/view?usp=sharing", icon: File },
 ];
 
 export function Sidebar() {
