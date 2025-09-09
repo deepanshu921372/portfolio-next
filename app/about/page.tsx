@@ -11,7 +11,11 @@ export default function AboutPage() {
       />
 
       <div className="max-w-3xl mx-auto mb-16">
-        <p className="text-lg leading-relaxed text-justify mb-6">{personalData.about}</p>
+        <div className="text-lg leading-relaxed text-justify mb-6 space-y-4">
+          {personalData.about.split('\n\n').map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </div>
         <div className="grid grid-cols-2 gap-4 text-center">
           <div className="bg-card rounded-lg p-4 shadow-sm">
             <p className="text-muted-foreground text-sm">Location</p>
