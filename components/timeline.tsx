@@ -5,7 +5,7 @@ interface TimelineItemProps {
   title: string;
   subtitle: string;
   date: string;
-  description: string;
+  description: string | string[];
   technologies?: string[];
   isLeft?: boolean;
 }
@@ -45,7 +45,17 @@ export function TimelineItem({
           <p className="text-muted-foreground">{subtitle}</p>
           <p className="text-sm text-muted-foreground">{date}</p>
         </div>
-        <p className="mb-4">{description}</p>
+        <div className="mb-4">
+          {Array.isArray(description) ? (
+            <ul className="list-disc list-inside space-y-2">
+              {description.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{description}</p>
+          )}
+        </div>
         {technologies && (
           <div className="flex flex-wrap gap-2">
             {technologies.map((tech) => (

@@ -3,8 +3,9 @@ import hms from "../public/deecare.jpeg";
 import book from "../public/book.jpeg";
 import cloth from "../public/cloth.jpeg";
 import nova from "../public/nova.jpeg";
-import portfolio from "../public/portfolio.png"
-import budget from "../public/budget.png"
+import portfolio from "../public/portfolio.png";
+import budget from "../public/budget.png";
+import superintern from "../public/superintern.png";
 
 export const personalData = {
   name: "Deepanshu Sharma",
@@ -44,37 +45,86 @@ export const experienceData = [
     company: "Bolofy",
     location: "Remote",
     duration: "March 2024 - Present",
-    description:
-      "Worked on creating and fixing UI and user experience for an AI-powered chatbot.",
-    technologies: ["React", "Node.js", "Material-UI", "Tailwind CSS"],
+    description: [
+      "Enhanced an chatbot by implementing real-time chatting functionalities, improving communication within the employees through the platform.",
+      "Integrated in-app push notifications using Firebase, ensuring timely updates and boosting user engagement.",
+      "Improved and upgraded the UI/UX of the chatbot, making it more intuitive and user-friendly.",
+      "Built SuperIntern.in, a responsive platform that connects students with companies to provide internships and freelance opportunities.",
+      "Currently developing a full-featured e-commerce platform with scalable architecture and modern UI components.",
+    ],
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Firebase",
+      "Cloudinary",
+      "Vite",
+      "Netlify",
+      "Hostinger",
+    ],
   },
   {
     position: "Full-stack Developer Intern",
     company: "CODTECH IT SOLUTIONS",
     location: "Remote",
     duration: "Dec 2024 - Jan 2025",
-    description:
-      "Built a real-time collaborative document editor with React, Node.js & WebSockets. Developed a Chrome extension for website time tracking, enhancing productivity insights.",
-    technologies: ["React", "Node.js", "WebSockets", "Tailwind CSS"],
+    description: [
+      "Built a real-time collaborative document editor using React, Node.js & WebSockets.",
+      "Gained hands-on experience in full-stack development, debugging, and team-based problem solving.",
+      "Improved system collaboration efficiency by implementing optimized frontend-backend communication.",
+    ],
+    technologies: ["React.js", "Tailwind CSS", "Node.js", "WebSockets", "MongoDB", "Express.js"],
   },
   {
     position: "Web Developer Intern",
     company: "999Logistics",
     location: "Bangalore, India - Remote",
     duration: "Apr 2024 - Jun 2024",
-    description:
-      "Developed an employee management system with an intuitive interface, automated ID card generation, and an optimized database structure, reducing storage space.",
-    technologies: ["React.js", "Material UI", "Amazon S3", "Node.js"],
+    description: [
+      "Enhanced user experience by developing a responsive React.js & Material-UI frontend.",
+      "Improved scalability & performance using Amazon S3 storage integration.",
+      "Automated employee ID card generation, reducing processing time and streamlining onboarding.",
+      "Optimized database structures, reducing storage costs and improving efficiency.",
+    ],
+    technologies: ["React.js", "Material-UI", "Node.js", "MongoDB", "AWS (S3)"],
   },
 ];
 
 export const projectsData = [
   {
+    title: "SuperIntern.in – Internship & Freelance Platform",
+    description:
+      "Streamlined employee registration with unique ID card generation using Material-UI, React.js, Node.js, Postman, MongoDB, and Amazon S3.",
+    image: superintern,
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Firebase",
+      "Cloudinary",
+      "Postman API",
+      "Hostinger",
+      "Netlify",
+    ],
+    githubLink: "https://github.com/SuperrrIntern/superintern",
+    liveLink: "https://superintern.in",
+  },
+  {
     title: "Employee Management Web App",
     description:
       "Streamlined employee registration with unique ID card generation using Material-UI, React.js, Node.js, Postman, MongoDB, and Amazon S3.",
     image: ems,
-    technologies: ["React", "Material-UI", "Amazon Web Services (AWS)", "Postman API", "MongoDB"],
+    technologies: [
+      "React",
+      "Material-UI",
+      "Amazon Web Services (AWS)",
+      "Postman API",
+      "MongoDB",
+    ],
     githubLink: "https://github.com/deepanshu921372/999-manager-app-id-card",
     liveLink: "https://admin.999logistics.in",
   },
@@ -83,7 +133,18 @@ export const projectsData = [
     description:
       "BudgetBuddy is a smart, voice-powered finance tracker that helps you manage income and expenses hands-free. Just say “Add transaction” and speak your details — no typing needed! It features real-time charts, voice navigation, secure login, and works seamlessly across devices",
     image: budget,
-    technologies: ["React.js", "Zustand", "TailwindCSS", "Node.js", "Express", "Firebase Auth", "MongoDB", "Chart.js", "Speech Recognition API", "XLSX"],
+    technologies: [
+      "React.js",
+      "Zustand",
+      "TailwindCSS",
+      "Node.js",
+      "Express",
+      "Firebase Auth",
+      "MongoDB",
+      "Chart.js",
+      "Speech Recognition API",
+      "XLSX",
+    ],
     githubLink: "https://github.com/deepanshu921372/BudgetBuddy",
     liveLink: "https://budgettbuddy.netlify.app",
   },
@@ -92,7 +153,17 @@ export const projectsData = [
     description:
       "DeeCare is a fully responsive Hospital Management System built using MongoDB, Express.js, React, Node.js, and Cloudinary. It streamlines appointment booking, doctor management, and admin control to enhance hospital operations. Patients can easily book appointments, while admins can manage doctors, view upcoming appointments, and register new admins. The system ensures secure authentication, cloud storage, and a seamless user experience.",
     image: hms,
-    technologies: ["React.js", "Tailwind CSS", "Express.js", "MongoDB", "Node.js", "API Development", "Netlify", "Render", "Cloudinary"],
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "Express.js",
+      "MongoDB",
+      "Node.js",
+      "API Development",
+      "Netlify",
+      "Render",
+      "Cloudinary",
+    ],
     githubLink: "https://github.com/deepanshu921372/HMS_Frontend_And_Admin",
     liveLink: "https://deecare-hms.netlify.app",
   },
@@ -101,7 +172,15 @@ export const projectsData = [
     description:
       "An e-commerce platform where users can purchase books and admins can manage inventory.",
     image: book,
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Redux", "Tailwind CSS", "REST API"],
+    technologies: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Redux",
+      "Tailwind CSS",
+      "REST API",
+    ],
     githubLink: "https://github.com/deepanshu921372/bookheaven",
     liveLink: "https://bookheavenstore.netlify.app",
   },
@@ -110,7 +189,14 @@ export const projectsData = [
     description:
       "A modern clothing e-commerce platform with seamless shopping experience and admin inventory management system.",
     image: cloth,
-    technologies: ["Next.js", "MongoDB", "Tailwind CSS", "React.js", "Node.js", "API Development"],
+    technologies: [
+      "Next.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "React.js",
+      "Node.js",
+      "API Development",
+    ],
     githubLink: "https://github.com/deepanshu921372/e-commerce",
     liveLink: "https://famstyle.vercel.app",
   },
@@ -119,7 +205,12 @@ export const projectsData = [
     description:
       "Created Virtual Assistant Nova, a web-based application that lets users interact with a smart voice assistant using natural language. Built with HTML, CSS, and JavaScript, Nova answers questions, opens websites.",
     image: nova,
-    technologies: ["HTML5", "Cascading Style Sheets (CSS)", "JavaScript", "Spline"],
+    technologies: [
+      "HTML5",
+      "Cascading Style Sheets (CSS)",
+      "JavaScript",
+      "Spline",
+    ],
     githubLink: "https://github.com/deepanshu921372/VirtualAssistant",
     liveLink: "https://virtualassistantnova.netlify.app",
   },
@@ -146,7 +237,7 @@ export const skillsData = {
   backend: [
     { name: "Node.js", level: 90 },
     { name: "Express", level: 85 },
-    { name: "MongoDB", level: 80 },,
+    { name: "MongoDB", level: 80 },
   ],
   tools: [
     { name: "VS Code", level: 99 },
