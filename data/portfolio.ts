@@ -6,6 +6,7 @@ import nova from "../public/nova.jpeg";
 import portfolio from "../public/portfolio.png";
 import budget from "../public/budget.png";
 import superintern from "../public/superintern.png";
+import medmind from "../public/medmind.png";
 
 export const personalData = {
   name: "Deepanshu Sharma",
@@ -93,6 +94,27 @@ export const experienceData = [
 ];
 
 export const projectsData = [
+  {
+    title: "MedMind – AI That Understands Your Prescriptions",
+    description:
+      "MedMind is an AI-powered medical document platform with OCR, chatbot-based query answering, and maps integration, enabling secure upload, management, and quick access to prescriptions, lab reports, and nearby healthcare services.",
+    image: medmind,
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Firebase",
+      "Cloudinary",
+      "Tesseract.js",
+      "Groq SDK",
+      "OpenAI API",
+      "Python OCR Services",
+    ],
+    githubLink: "https://github.com/deepanshu921372/MedMind",
+    liveLink: "https://drive.google.com/file/d/13Dqx5TEnv2uGckZ5BnBayEcYLxD6pmV5/view",
+  },
   {
     title: "SuperIntern.in – Internship & Freelance Platform",
     description:
