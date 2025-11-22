@@ -213,9 +213,10 @@ const ContactForm = () => {
           GitHub
         </a>
         <a
-          href="/resume.pdf"
+          href={personalData.resumeUrl}
           className="contact-link-btn resume-btn"
-          download="Deepanshu_Sharma_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Download Resume
         </a>

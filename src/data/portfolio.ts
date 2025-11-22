@@ -12,6 +12,7 @@ export const personalData = {
     linkedin: "https://www.linkedin.com/in/deepanshusharma921372/",
     twitter: "https://twitter.com/deepanshu921372",
   },
+  resumeUrl: "https://drive.google.com/file/d/1ZYzcGOFx1v1O5TfZHzKM6y5bBnPi6mtL/view?usp=sharing",
 };
 
 export const skillsData = [
