@@ -6,13 +6,13 @@ export const personalData = {
   email: "sharmadeepanshu1005@gmail.com",
   location: "India",
   about:
-    "I am an enthusiastic Full-Stack Web Developer who studies B.Tech AI & ML and builds applications that scale and respond efficiently. During the previous year I held two internship positions as a React Developer at @Bolofy and a Full-Stack Developer at @CodTech IT Solutions and @999Logistics where I built real-time applications and improved performance and user experience.\n\nMy expertise includes React.js and Node.js and AWS and MongoDB while I create well-structured code and resolve challenging problems. My projects consist of a voice-controlled expense tracking application called BudgetBuddy and an Employee Management Web App and SuperIntern.in which connects students to internships and freelance opportunities.\n\nI perform well in team settings that move quickly while continuously pursuing new technology knowledge. My objective is to apply my technical knowledge in innovative projects while developing into a well-rounded software engineer.",
+    "I am an enthusiastic Full-Stack Web Developer pursuing B.Tech in AI & ML, dedicated to building scalable, reliable, and user-focused web applications. I have worked as a Full Stack Developer at Bolofy, CodTech IT Solutions, and 999Logistics, where I contributed to end-to-end development, improved system performance, and built real-time, production-ready applications across multiple domains.\n\nMy expertise lies in React.js, Node.js, AWS, and MongoDB, with a strong focus on writing clean, maintainable code and solving complex engineering problems. I've built several impactful projects, including Resuneo, an AI-powered ATS and job-finding platform; SuperIntern.in, a student-company matching system; BudgetBuddy, a voice-controlled expense tracker; and a full-stack Employee Management Web App with automated workflows.\n\nI excel in fast-moving team environments and constantly explore new technologies to stay ahead in modern web development. My goal is to contribute to meaningful, innovative products while continuously sharpening my skills as a dependable and versatile software engineer.",
   socialLinks: {
     github: "https://github.com/deepanshu921372",
     linkedin: "https://www.linkedin.com/in/deepanshusharma921372/",
     twitter: "https://twitter.com/deepanshu921372",
   },
-  resumeUrl: "https://drive.google.com/file/d/1ZYzcGOFx1v1O5TfZHzKM6y5bBnPi6mtL/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/1ww5F-WEUlYem0UPkG6sh-4x70NZFOVvE/view?usp=sharing",
 };
 
 export const skillsData = [
@@ -76,35 +76,6 @@ export const skillsData = [
   },
 ];
 
-export const detailedSkillsData = {
-  frontend: [
-    { name: "HTML", level: 99 },
-    { name: "CSS", level: 95 },
-    { name: "Tailwind CSS", level: 95 },
-    { name: "JavaScript", level: 90 },
-    { name: "React", level: 90 },
-    { name: "Next.js", level: 85 },
-    { name: "TypeScript", level: 80 },
-    { name: "Material-UI", level: 85 },
-  ],
-  backend: [
-    { name: "Node.js", level: 90 },
-    { name: "Express", level: 85 },
-    { name: "MongoDB", level: 80 },
-    { name: "PostgreSQL", level: 70 },
-    { name: "Firebase", level: 80 },
-  ],
-  tools: [
-    { name: "VS Code", level: 99 },
-    { name: "GitHub", level: 90 },
-    { name: "Figma", level: 80 },
-    { name: "Vercel", level: 75 },
-    { name: "AWS", level: 55 },
-    { name: "Postman", level: 85 },
-    { name: "Docker", level: 60 },
-    { name: "Cloudinary", level: 80 },
-  ],
-};
 
 export const statsData = [
   { number: 30, label: "Projects" },
@@ -116,6 +87,32 @@ export const statsData = [
 export const projectsData = [
   {
     number: "01",
+    emoji: "📄",
+    title: "Resuneo",
+    description:
+      "AI-powered resume ATS analyzer and smart job finder that helps job seekers optimize their resumes, find matching jobs across 4 platforms, generate tailored cover letters, and track applications—all with transparent scoring and AI assistance powered by Claude 3.5 Sonnet.",
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS v4",
+      "Vite",
+      "Firebase Auth",
+      "Cloudinary",
+      "OpenRouter API",
+      "Claude 3.5 Sonnet",
+      "Razorpay",
+      "Recharts",
+      "Puppeteer",
+      "Framer Motion",
+    ],
+    image: "/resuneo.png",
+    githubLink: "https://github.com/deepanshu921372/Resuneo",
+    liveLink: "https://resuneo.netlify.app",
+  },
+  {
+    number: "02",
     emoji: "🤖",
     title: "MedMind",
     description:
@@ -138,7 +135,7 @@ export const projectsData = [
     liveLink: "https://drive.google.com/file/d/13Dqx5TEnv2uGckZ5BnBayEcYLxD6pmV5/view",
   },
   {
-    number: "02",
+    number: "03",
     emoji: "💼",
     title: "SuperIntern.in",
     description:
@@ -160,7 +157,7 @@ export const projectsData = [
     liveLink: "https://superintern.in",
   },
   {
-    number: "03",
+    number: "04",
     emoji: "👔",
     title: "Employee Management Web App",
     description:
@@ -178,7 +175,7 @@ export const projectsData = [
     liveLink: "https://admin.999logistics.in",
   },
   {
-    number: "04",
+    number: "05",
     emoji: "💰",
     title: "BudgetBuddy",
     description:
@@ -200,7 +197,7 @@ export const projectsData = [
     liveLink: "https://budgettbuddy.netlify.app",
   },
   {
-    number: "05",
+    number: "06",
     emoji: "🏥",
     title: "DeeCare HMS",
     description:
@@ -221,7 +218,7 @@ export const projectsData = [
     liveLink: "https://deecare-hms.netlify.app",
   },
   {
-    number: "06",
+    number: "07",
     emoji: "📚",
     title: "Book Heaven",
     description:
@@ -240,7 +237,7 @@ export const projectsData = [
     liveLink: "https://bookheavenstore.netlify.app",
   },
   {
-    number: "07",
+    number: "08",
     emoji: "👗",
     title: "FamStyle | Clothing Store",
     description:
@@ -258,7 +255,7 @@ export const projectsData = [
     liveLink: "https://famstyle.vercel.app",
   },
   {
-    number: "08",
+    number: "09",
     emoji: "🤖",
     title: "Virtual Assistant Nova",
     description:
