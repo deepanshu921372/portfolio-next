@@ -13,6 +13,7 @@ const emptyProject: Omit<ProjectData, '_id'> = {
   image: '',
   githubLink: '',
   liveLink: '',
+  order: 0,
 };
 
 export default function ProjectsEditor() {

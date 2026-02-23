@@ -10,6 +10,7 @@ const emptyEducation: Omit<EducationData, '_id'> = {
   location: '',
   duration: '',
   description: '',
+  order: 0,
 };
 
 export default function EducationEditor() {

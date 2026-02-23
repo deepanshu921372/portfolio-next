@@ -8,6 +8,7 @@ const emptyJourney: Omit<JourneyData, '_id'> = {
   icon: '🎯',
   title: '',
   description: '',
+  order: 0,
 };
 
 export default function JourneyEditor() {

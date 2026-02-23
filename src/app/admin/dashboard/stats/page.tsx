@@ -7,6 +7,7 @@ import Modal from '@/components/admin/Modal';
 const emptyStat: Omit<StatData, '_id'> = {
   number: 0,
   label: '',
+  order: 0,
 };
 
 export default function StatsEditor() {

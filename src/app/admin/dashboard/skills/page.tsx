@@ -9,6 +9,7 @@ const emptySkill: Omit<SkillData, '_id'> = {
   title: '',
   description: '',
   span: { col: 1, row: 1 },
+  order: 0,
 };
 
 export default function SkillsEditor() {
