@@ -12,36 +12,36 @@ export const personalData = {
     linkedin: "https://www.linkedin.com/in/deepanshusharma921372/",
     twitter: "https://twitter.com/deepanshu921372",
   },
-  resumeUrl: "https://drive.google.com/file/d/1ww5F-WEUlYem0UPkG6sh-4x70NZFOVvE/view?usp=sharing",
+  resumeUrl: "https://drive.google.com/file/d/1mFGp63PdvVyxAVP9AH-h7LDoGUTUC1KS/view?usp=sharing",
 };
 
 export const skillsData = [
   {
     icon: "⚛️",
     title: "Frontend Mastery",
-    description: "React, Next.js, TypeScript, HTML5, CSS3, Tailwind CSS - Building lightning-fast, interactive UIs",
+    description: "React.js, Next.js, TypeScript, Redux, Context API, Tailwind CSS, Material UI, Framer Motion",
     span: { col: 2, row: 2 },
   },
   {
     icon: "🚀",
     title: "Backend Power",
-    description: "Node.js, Express.js - Scalable APIs & Server-side Development",
+    description: "Node.js, Express.js, REST APIs, JWT, OAuth, WebSockets (Socket.io)",
   },
   {
     icon: "🗄️",
-    title: "Database",
-    description: "MongoDB, PostgreSQL, Firebase",
+    title: "Databases & ORMs",
+    description: "PostgreSQL, MySQL, MongoDB, Firebase Firestore, Prisma, Sequelize, Mongoose",
   },
   {
     icon: "🤖",
-    title: "AI Integration",
-    description: "OpenAI API, Groq SDK, Tesseract.js OCR - Intelligent solutions",
+    title: "AI & Integrations",
+    description: "OpenAI API, Groq SDK, OpenRouter, Puppeteer, Stripe, Razorpay, Cashfree, Google APIs, Cloudinary, Firebase Admin",
     span: { col: 2 },
   },
   {
     icon: "☁️",
     title: "Cloud & DevOps",
-    description: "AWS, Docker, Vercel, Netlify, Render, Hostinger",
+    description: "AWS (EC2, S3), Docker, Docker Compose, Nginx, CI/CD (GitHub Actions), Vercel, Render, DigitalOcean",
   },
   {
     icon: "🎨",
@@ -51,7 +51,7 @@ export const skillsData = [
   {
     icon: "⚙️",
     title: "Tools & Workflow",
-    description: "VS Code, GitHub, Postman, n8n workflows",
+    description: "Git, GitHub, Postman, VS Code, n8n workflows",
   },
   {
     icon: "📱",
@@ -64,9 +64,9 @@ export const skillsData = [
     description: "REST API, Firebase Auth, Cloudinary, Speech Recognition API",
   },
   {
-    icon: "📊",
-    title: "State Management",
-    description: "Redux, Zustand, Context API",
+    icon: "💻",
+    title: "Languages",
+    description: "JavaScript, TypeScript, Python, C++, SQL",
   },
   {
     icon: "🌐",
@@ -275,28 +275,28 @@ export const projectsData = [
 export const journeyData = [
   {
     icon: "💼",
-    title: "Full-stack Developer @ Bolofy",
-    description: "Jun 2025 - Present - Building SuperIntern.in, e-commerce platforms, and SheetSumo integration tool",
+    title: "Full Stack Developer @ RoamMyWay",
+    description: "Nov 2025 - Present - Redesigned UI, built lead-generation flow, contributing to Romaya AI Trip Planner",
   },
   {
     icon: "⚛️",
-    title: "React Developer @ Bolofy",
-    description: "Mar 2025 - May 2025 - Enhanced chatbot with real-time features and Firebase push notifications",
+    title: "Full Stack Developer @ Bolofy AI Solutions",
+    description: "Mar 2025 - Present - Built SuperIntern (1,000+ users), developing SheetsProjects SaaS platform",
   },
   {
     icon: "🚀",
-    title: "Full-stack @ CODTECH",
-    description: "Dec 2024 - Jan 2025 - Built collaborative document editor with WebSockets",
+    title: "Full-stack Developer Intern @ CodeTech IT Solutions",
+    description: "Dec 2024 - Jan 2025 - Built real-time collaborative editor with WebSockets",
   },
   {
     icon: "☁️",
-    title: "Web Developer @ 999Logistics",
-    description: "Apr 2024 - Jun 2024 - AWS integration, automation, and employee management system",
+    title: "Full Stack Developer @ Rastaa.AI",
+    description: "Apr 2024 - Jul 2024 - Redesigned admin dashboard, integrated backend APIs, optimized frontend performance",
   },
   {
     icon: "🎓",
     title: "B.Tech AI & ML @ VIPS",
-    description: "2023 - Present - Vivekanand Institute of Professional Studies, New Delhi",
+    description: "2023 - Present - Vivekananda Institute of Professional Studies, New Delhi. GPA: 8.4",
   },
   {
     icon: "📖",
